@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+            integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+            crossorigin="anonymous"
+        />
+        <link href="home.css" rel="stylesheet" />
+    <title>Travel</title>
+</head>
+<body>
+    <!--Page Header-->
+    <header>
+        <nav>
+            <div >
+                    <img src="image.png" alt="Enjoy with us" width="100px" height="100%">
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="about.html">About US</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li class="active"><a href="#">Pages</a>
+                            <!-- <div class="menu1"> -->
+                                <ul>
+                                    <li><a href="Flights.html">Flights</a></li>
+                                    <li><a href="hotel.html">Hotels</a></li>
+                                </ul>
+                            <!-- </div> -->
+                        </li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="contact.html">Contacts</a></li>
+                </ul>
+            </div>    
+        </nav>
+        <hr>
+    </header>
+</br>
+<!--Page section 1-->
+    <section class="section1">   
+        <div class="slider ">
+            <div class="slides">
+              <!--radio buttons start-->
+              <input type="radio" name="radio-btn" id="radio1">
+              <input type="radio" name="radio-btn" id="radio2">
+              <input type="radio" name="radio-btn" id="radio3">
+              <input type="radio" name="radio-btn" id="radio4">
+
+              <!--slide images start-->
+              <div class="slide first">
+                <img src="full-shot-travel.webp"width="1330px" height="500px">
+              </div>
+              <div class="slide">
+                <img src="Capture.PNG" alt="Travel" width="1330px" height="500px">
+              </div>
+              <div class="slide">
+                <img src="time-travel-vector-flyer-with.webp"width="1330px" height="500px">
+              </div>
+              <div class="slide">
+                <img src="Capture1.PNG" alt="Travel" width="1330px" height="500px">
+              </div>
+
+              <!--automatic navigation start-->
+              <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+              </div>
+
+            </div>
+            <!--manual navigation start-->
+            <div class="navigation-manual">
+              <label for="radio1" class="manual-btn"></label>
+              <label for="radio2" class="manual-btn"></label>
+              <label for="radio3" class="manual-btn"></label>
+              <label for="radio4" class="manual-btn"></label>
+            </div>
+          </div>       
+    </section>
+    <!--Section 2-->
+    <section class="section2 style-section">
+        <div class="tab">
+            <div class="transport">
+                <ul>
+                    <li><button class="btn-tro" id="fly">Flights</button></li>
+                    <li><button class="btn-tro" id="hotel"> Hotels</button></li>
+                    <li><button class="btn-tro">Cars </button></li>
+                </ul>
+            </div>
+            <div class="tab1">
+                <form class="form" method="get">
+                    <div class="forme">
+                        <div class="input">
+                            
+                            <div class="check1" >
+                                <label>Flying form : </label>
+                                  <select class="seclect1">
+                                    <option>City or Ariport </option>
+                                    <option>Alaska</option>
+                                    <option>Canada</option>
+                                    <option>Paris</option>
+                                    <option>Korea</option>
+                                  </select>
+                            </div>                           
+                            <div class="check2">
+                                <label>To : </label>
+                                  <select class="seclect1">
+                                    <option>City or Ariport </option>
+                                    <option>Alaska</option>
+                                    <option>Canada</option>
+                                    <option>Paris</option>
+                                    <option>Korea</option>
+                                  </select>
+                            </div>
+                        </div>
+                        <div class="dates">
+                            
+                            <div class="date">
+                                <label>departing : </label>
+                                <div class="date-icone">
+                                    <input type="text" class="date" placeholder="M/D/Y">
+                                    <i class="fa-solid fa-calendar-days"></i>
+                                </div>
+                               
+                            </div>
+                            <div class="date">
+                                <label>Returing : </label>
+                                <div class="date-icone">
+                                    <input type="text" class="date" placeholder="M/D/Y">
+                                    <i class="fa-solid fa-calendar-days"></i>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="num-famille">                            
+                            <div class="adult">
+                                <label>Adult : </label>
+                                  <select class="seclect1">
+                                    <option>1 </option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                  </select>
+                            </div>
+                            <div class="child">
+                                <label>Child : </label>
+                                  <select class="seclect1">
+                                    <option>1 </option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                  </select>
+                            </div>
+                        </div>
+                        <div class="search">
+                            <button>Search</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!--tableau 2-->
+            <div class="tab2">
+                <form class="form" method="get">
+                    <div class="forme">
+                        <div class="input">    
+                            <div class="check1" >
+                                <label>City or Hotel Name : </label>
+                                  <select class="seclect1">
+                                    <option>Entre a destination or hotel name </option>
+                                    <option>Alaska</option>
+                                    <option>Canada</option>
+                                    <option>Paris</option>
+                                    <option>Korea</option>
+                                  </select>
+                            </div>                           
+                            
+                        </div>
+                        <div class="dates">
+                            
+                            <div class="date">
+                                <label>Check-In : </label>
+                                <div class="date-icone">
+                                    <input type="text" class="date" placeholder="M/D/Y">
+                                    <i class="fa-solid fa-calendar-days"></i>
+                                </div>
+                               
+                            </div>
+                            <div class="date">
+                                <label>Check-Out : </label>
+                                <div class="date-icone">
+                                    <input type="text" class="date" placeholder="M/D/Y">
+                                    <i class="fa-solid fa-calendar-days"></i>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="num-famille">                            
+                            <div class="adult">
+                                <label>Adult : </label>
+                                  <select class="seclect1">
+                                    <option>1 </option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                  </select>
+                            </div>
+                            
+                        </div>
+                        <div class="search">
+                            <button>Search</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!--Section 3-->
+    <section class="section 3">
+        <div>
+            <div class="title">
+                <h1>WHY WE ARE THE BEST</h1>
+            </div>
+            <div class="article">
+                <p>our company gives more services.</p>
+            </div>
+            <div class="best style-section">
+                <div class="best1 " >
+
+                <a href="#">
+                    <figure>
+                        <img src="	https://demo.gridgum.com/templates/Travel-agency/images/why1.png">
+                        <img src="https://demo.gridgum.com/templates/Travel-agency/images/why1_hover.png">
+                    </figure>
+                    <h4>Amazing Travel</h4>
+                    <!-- <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</p> -->
+                    <h6>Read more</h6>
+                </a>
+                </div>
+                <div class="best2">
+                    <a href="#">
+                    <figure>
+                        <img src="https://demo.gridgum.com/templates/Travel-agency/images/why2.png">
+                        <img src="https://demo.gridgum.com/templates/Travel-agency/images/why2_hover.png">
+                    </figure>
+                    <h4>Discover</h4>
+                    <!-- <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</p> -->
+                    <h6>Read more</h6>
+                </a>
+                </div>
+                <div class="best3">
+                <a href="#">
+                    <figure>
+                        <img src="https://demo.gridgum.com/templates/Travel-agency/images/why3.png">
+                        <img src="https://demo.gridgum.com/templates/Travel-agency/images/why3_hover.png">
+                    </figure>
+                    <h4>Book Your Trip</h4>
+                    <!-- <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</p> -->
+                    <h6>Read more</h6>
+                </a>
+                </div>
+                <div class="best4">
+                <a href="#">
+                    <figure>
+                        <img src="https://demo.gridgum.com/templates/Travel-agency/images/why4.png">
+                        <img src="https://demo.gridgum.com/templates/Travel-agency/images/why4_hover.png">
+                    </figure>
+                    <h4>Nice Support</h4>
+                    <!-- <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</p> -->
+                    <h6>Read more</h6>
+                </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Footer-->
+    <footer>
+        <div class="footer">
+            <div class="conclusion">
+                <img src="enjoy1.png" alt="Logo page" height="100px" width="100px">
+                <article>Travel early and travel often . Live abroad , if you can . 
+                    Understand cultures other than your own . As your understanding of other
+                    cultures increases , your understanding of yourself and your own culture will
+                    increase exponentially . 
+                </article>
+            </div>
+            <div>
+                <h3>Travel Specialists</h3>
+                <div>
+                <ul>
+                    <li>Frist Class Flights</li>
+                    <li>Accessible Travel</li>
+                    <li>Amazing Cruises</li>
+                </ul>
+                </div>
+                <div>
+                    <i class="fa-brands fa-square-facebook"></i>
+                    <i class="fa-brands fa-square-instagram"></i>
+                    <i class="fa-brands fa-square-pinterest"></i>
+                    <i class="fa-brands fa-square-google-plus"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                </div>
+            </div>
+            <div>
+                <h3>Activites</h3>
+                <ul>
+                    <li>Soccer Drills</li>
+                    <li>Horse Riding</li>
+                    <li>Beginner`s Guide to Hiking</li>
+                    <li>Recreational Fishing</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Newsletter</h3>
+                <p>Inspiration, ideas, news and your feedback.</p>
+                <input type="email" class="mail">
+                <button>Submit</button>
+                <p>+21625513819</p>
+                <p>enjoy@travel-support.com</p>
+            </div>
+        </div>
+    </footer>
+    <!--Link javascript-->
+    <script src="https://kit.fontawesome.com/fe6fa27588.js" crossorigin="anonymous"></script>
+
+    <!--Code javascript de animation des images -->
+    <script type="text/javascript">
+        var counter = 1;
+        setInterval(function(){
+          document.getElementById('radio' + counter).checked = true;
+          counter++;
+          if(counter > 4){
+            counter = 1;
+          }
+        }, 5000);
+        </script>
+</body>
+</html>

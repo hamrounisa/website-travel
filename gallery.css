@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+  } 
+/* Nav menu */
+nav{
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+}
+nav ul{
+  float: right;
+  margin-right: 30px;
+}
+nav ul li{
+  display: inline-block;
+}
+nav .menu ul li a{
+  color: #495057;
+  display: block;
+  padding: 0 15px;
+  line-height: 70px;
+  font-size: 20px;
+  transition: .5s;
+}
+nav ul li a:hover {
+background: #23dbdb;
+
+}
+nav ul li{
+color: #23dbdb;
+}
+nav ul ul{
+  position: absolute;
+  top: 85px;
+  opacity: 0;
+  visibility: hidden;
+}
+nav ul li:hover > ul{
+  top: 70px;
+  opacity: 1;
+  visibility: visible;
+  transition: .3s linear;
+}
+nav ul ul li{
+  width: 150px;
+  display: list-item;
+  position: relative;
+  border-top: none;
+}
+nav ul ul li a{
+  line-height: 50px;
+}
+nav ul ul ul{
+  border-top: none;
+}
+nav ul ul ul li{
+  position: relative;
+  top: -70px;
+  left: 150px;
+}
+nav ul ul li a i{
+  margin-left: 45px;
+}
+/*End nav*/
+  /*navbar : hotel and fly */
+  .barre ul{
+    padding: 40px;
+    display: flex;
+    gap: 20px;
+    color: #495057;
+    font-size: 25px;
+  }
+  .barre ul li a {
+    color: #495057;
+  }
+  .barre ul li{
+    display: inline-block;
+  }
+  .barre ul li a:hover{
+    color: #23dbdb;
+  }
+  /* images */
+  .image , .img-hotel{
+    padding: 6px;
+  }
+  .snip1 {
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  }
+  .snip1 img ,
+  .img-hotel img{
+    vertical-align: top;
+    -webkit-transition: all 2s ease-out;
+    transition: all 2s ease-out;
+    -webkit-transform: scale(1.4);
+    transform: scale(1.4);
+    width: 200px;
+    height: 200px;
+  }
+.snip1 :hover img ,
+.snip1 .hover img {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+.img-hotel{
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+.img-hotel :hover img ,
+.img-hotel .hover img {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+body{
+    padding: 4px;
+}
+/* CSS class footer */
+footer{
+  background: #252525;
+  border-top: 4px solid #1cbbb4;
+  padding-top: 35px;
+  padding-bottom: 45px;
+  color: #959595;
+  display: flex;
+  gap: 40px;
+  align-items: baseline;
+}
+.footer{
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  gap: 40px;
+  align-items: baseline;
+}

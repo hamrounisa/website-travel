@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+  } 
+/* Nav menu */
+nav{
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+}
+nav ul{
+  float: right;
+  margin-right: 30px;
+}
+nav ul li{
+  display: inline-block;
+}
+nav .menu ul li a{
+  color: #495057;
+  display: block;
+  padding: 0 15px;
+  line-height: 70px;
+  font-size: 20px;
+  transition: .5s;
+}
+nav ul li a:hover {
+background: #23dbdb;
+
+}
+nav ul li{
+color: #23dbdb;
+}
+nav ul ul{
+  position: absolute;
+  top: 85px;
+  opacity: 0;
+  visibility: hidden;
+}
+nav ul li:hover > ul{
+  top: 70px;
+  opacity: 1;
+  visibility: visible;
+  transition: .3s linear;
+}
+nav ul ul li{
+  width: 150px;
+  display: list-item;
+  position: relative;
+  border-top: none;
+}
+nav ul ul li a{
+  line-height: 50px;
+}
+nav ul ul ul{
+  border-top: none;
+}
+nav ul ul ul li{
+  position: relative;
+  top: -70px;
+  left: 150px;
+}
+nav ul ul li a i{
+  margin-left: 45px;
+}
+/*End nav*/
+.video{
+  text-align: center;
+}
+
+  h1{
+    text-align: center;
+    font-family: monospace;
+    font-size: 50px;
+    color: #1cbbb4;
+  }  
+p{
+    text-align: center;
+    font-family: "Source Sans Pro", "Arial", sans-serif;
+}
+
+/*classement */
+.classe {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.prog-bar{
+  display: flex;
+  flex-direction: column;
+}
+.fly{
+    display: flex;
+}
+
+.chart {
+  background: rgba(255, 255, 255, 0.1);
+  justify-content: flex-start;
+  border-radius: 100px;
+  align-items: center;
+  position: relative;
+  padding: 0 5px;
+  display: flex;
+  height: 40px;
+  width: 500px;
+}
+  .chart span {
+      margin-left: 5px;
+      color: rgb(114, 195, 241);
+      font-weight: bolder;
+  }
+.bar {
+  animation: load 3s normal forwards;
+  box-shadow: 0 10px 40px -10px rgb(117, 236, 245);
+  border-radius: 100px;
+  background: rgb(147, 240, 243);
+  height: 30px;
+  width: 0;
+} 
+
+@keyframes load {
+  0% {
+      width: 0;
+  }
+  100% {
+      /* You need to change the percentage below to match the value in the corresponding <span> */
+      width: 68%;
+  }
+}
+
+/* CSS class footer */
+footer{
+  background: #252525;
+  border-top: 4px solid #1cbbb4;
+  padding-top: 35px;
+  padding-bottom: 45px;
+  color: #959595;
+}
+.footer{
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  gap: 20px;
+  align-items: baseline;
+}
